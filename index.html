@@ -94,7 +94,7 @@
     mapboxgl.accessToken = 'pk.eyJ1Ijoia2FyaXNkbWMiLCJhIjoiY2toMWYxZXJkMGg4bTJwbXV4ZWQ5NWp1aCJ9.e2wJOC093r6Af8mgRuENeQ'; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
-      style: 'mapbox://styles/mapbox/satellite-streets-v11', //stylesheet location
+      style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
       center: [-122.411464, 37.7852299], // starting position
       zoom: 10,// starting zoom
       transformRequest: transformRequest
@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1scRmWuL-wlz64b2rqzMF_XIQdD2qRNKHEzUJ2xAU4Cs/gviz/tq?tqx=out:csv&sheet=Mythology-Data',
+        url: 'https://docs.google.com/spreadsheets/1scRmWuL-wlz64b2rqzMF_XIQdD2qRNKHEzUJ2xAU4Cs/gviz/tq?tqx=out:csv&sheet=Mythology-Data',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
