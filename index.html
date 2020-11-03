@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/1scRmWuL-wlz64b2rqzMF_XIQdD2qRNKHEzUJ2xAU4Cs/gviz/tq?tqx=out:csv&sheet=Mythology-Data',
+        url: 'https://docs.google.com/spreadsheets/d/1scRmWuL-wlz64b2rqzMF_XIQdD2qRNKHEzUJ2xAU4Cs/gviz/tq?tqx=out:csv&sheet=MythologyData',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
